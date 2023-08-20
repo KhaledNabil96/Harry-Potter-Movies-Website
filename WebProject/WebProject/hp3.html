@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+<head> <!-- This is the start of head tag-->
+<p id="demo" style="color:red;"></p>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Movies List</title>  <!-- This is the tap name in the browser-->
+<style>  <!-- This is embedded style for hyperlink-->
+
+a href{margin : 0; padding-top:0}  <!-- hyberlink style,removes the space between link and upper text-->
+body {
+	background-image: url(background1.jpg);background-size: cover;height: 100vh;
+    padding:0;
+    margin:0;
+}
+body {
+	background-image: url(background1.jpg);background-size: cover;height: 100vh;
+    padding:0;
+    margin:0;
+}
+</style>
+</head>  <!-- This is the end of head tag-->
+
+<body style=" color: #FFF; font-style: italic; font-weight: bold;">  <!-- Inline style for the background of the website-->
+<img src="hp3.jpg" width="233" height="341" alt="Not_Found" />
+<p style="color: #FFF; font-style: italic; text-align: left; font-size: 18px; font-weight: bold;">Harry Potter &amp; The Prizoner of Azkaban (2004)</p>
+<p style="margin-bottom:0;color: #FFF; font-style: italic; text-align: left; font-size: 14px; font-weight: bold;">Movie Info:</p>
+<p style="margin : 0; padding-top: 0; color: #FF0; font-style: italic; text-align: left; font-size: 14px; font-weight: bold;">Harry Potter's (Daniel Radcliffe) third year at Hogwarts starts off badly when he learns deranged killer Sirius Black (Gary Oldman) has escaped from Azkaban prison and is bent on murdering the teenage wizard. While Hermione's (Emma Watson) cat torments Ron's (Rupert Grint) sickly rat, causing a rift among the trio, a swarm of nasty Dementors is sent to protect the school from Black. A mysterious new teacher helps Harry learn to defend himself, but what is his secret tie to Sirius Black?</p>
+<p style="margin-bottom:0;color: #FFF; font-style: italic; text-align: left; font-size: 14px; font-weight: bold;">Watch the Official Trailer:</p>
+<a style="color:#FC3" href="https://www.youtube.com/watch?v=lAxgztbYDbs">Harry Potter and the Prizoner of Azkaban (2004) Official Trailer</a>
+<p style="margin-bottom:0;color: #FFF; font-style: italic; text-align: left; font-size: 14px; font-weight: bold;">Rate And Review:</p>
+<form>
+<textarea name="review" rows="7" cols="50" ></textarea><br><br>
+  <label for="name3">Enter Your Name:</label><br>
+ <input type="text" id="name3" value=>
+ <select name="List">
+  <option>0</option>
+  <option>1</option>
+  <option>2</option>
+  <option>3</option>
+  <option>4</option>
+  <option>5</option>
+  <option>6</option>
+  <option>7</option>
+  <option>8</option>
+  <option>9</option>
+  <option>10</option>
+</select>
+<br><br>
+<input type="button" value="Submit" onclick="myFunction3()" />
+ <input name="Reset" type="reset" value="Reset" />
+      <div id="alert3" style="color: red"></div>
+</form>
+<hr>
+<script>
+function containsNumbers(str) { <!-- this is a function checks if the string have numbers or not-->
+  return /\d/.test(str);
+}
+function myFunction3() {<!-- this is a function to refuse the input if the user enters any numbers in his name-->
+                var name3 = document.getElementById('name3').value;
+                if (containsNumbers(name3)==true) {
+                    document.getElementById('alert3').innerHTML = 'The name can not be a number please re-enter your name ';
+
+                } else {
+                    document.getElementById('alert3').innerHTML = 'The user name is: ' + name3;
+
+                }
+}
+</script>
+<script>
+const d = new Date();<!--This is an object of the current date -->
+document.getElementById("demo").innerHTML = d;
+</script>
+</body>
+<html>

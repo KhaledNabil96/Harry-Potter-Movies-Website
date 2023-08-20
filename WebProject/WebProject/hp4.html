@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+<head> <!-- This is the start of head tag-->
+<p id="demo" style="color:red;"></p>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Movies List</title>  <!-- This is the tap name in the browser-->
+<style>  <!-- This is embedded style for hyperlink-->
+
+a href{margin : 0; padding-top:0}  <!-- hyberlink style,removes the space between link and upper text-->
+body {
+	background-image: url(background1.jpg);background-size: cover;height: 100vh;
+    padding:0;
+    margin:0;
+}
+body {
+	background-image: url(background1.jpg);background-size: cover;height: 100vh;
+    padding:0;
+    margin:0;
+}
+</style>
+</head>  <!-- This is the end of head tag-->
+
+<body style="color: #FFF; font-style: italic; font-weight: bold;">  <!-- Inline style for the background of the website-->
+<img src="hp4.jpg" width="236" height="338" alt="Not_Found" />
+<p style="color: #FFF; font-style: italic; text-align: left; font-size: 18px; font-weight: bold;">Harry Potter &amp; The Goblet of Fire (2005)</p>
+<p style="margin-bottom:0;color: #FFF; font-style: italic; text-align: left; font-size: 14px; font-weight: bold;">Movie Info:</p>
+<p style="margin : 0; padding-top: 0; color: #FF0; font-style: italic; text-align: left; font-size: 14px; font-weight: bold;">The fourth movie in the Harry Potter franchise sees Harry (Daniel Radcliffe) returning for his fourth year at Hogwarts School of Witchcraft and Wizardry, along with his friends, Ron (Rupert Grint) and Hermione (Emma Watson). There is an upcoming tournament between the three major schools of magic, with one participant selected from each school by the Goblet of Fire. When Harry's name is drawn, even though he is not eligible and is a fourth player, he must compete in the dangerous contest.</p>
+<p style="margin-bottom:0;color: #FFF; font-style: italic; text-align: left; font-size: 14px; font-weight: bold;">Watch the Official Trailer:</p>
+<a style="color:#FC3" href="https://www.youtube.com/watch?v=3EGojp4Hh6I">Harry Potter and the Goblet of Fire (2005) Official Trailer</a>
+<p style="margin-bottom:0;color: #FFF; font-style: italic; text-align: left; font-size: 14px; font-weight: bold;">Rate And Review:</p>
+<form>
+<textarea name="review" rows="7" cols="50" ></textarea><br><br>
+  <label for="name4">Enter Your Name:</label><br>
+ <input type="text" id="name4" value=>
+ <select name="List">
+  <option>0</option>
+  <option>1</option>
+  <option>2</option>
+  <option>3</option>
+  <option>4</option>
+  <option>5</option>
+  <option>6</option>
+  <option>7</option>
+  <option>8</option>
+  <option>9</option>
+  <option>10</option>
+</select>
+<br><br>
+<input type="button" value="Submit" onclick="myFunction4()" /> 
+<input name="Reset" type="reset" value="Reset" />
+      <div id="alert4" style="color: red"></div>
+
+</form>
+<hr>
+<script>
+function containsNumbers(str) { <!-- this is a function checks if the string have numbers or not-->
+  return /\d/.test(str);
+}
+function myFunction4() {<!-- this is a function to refuse the input if the user enters any numbers in his name-->
+                var name4 = document.getElementById('name4').value;
+                if (containsNumbers(name4)==true) {
+                    document.getElementById('alert4').innerHTML = 'The name can not be a number please re-enter your name ';
+
+                } else {
+                    document.getElementById('alert4').innerHTML = 'The user name is: ' + name4;
+
+                }
+}
+</script>
+<script>
+const d = new Date();<!--This is an object of the current date -->
+document.getElementById("demo").innerHTML = d;
+</script>
+</body>
+<html>

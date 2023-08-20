@@ -1,0 +1,140 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+<head> <!-- This is the start of head tag-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Movies List</title>  <!-- This is the tap name in the browser-->
+	<style> 
+<!-- This is embedded style for hyperlink-->
+
+#myInput {
+  
+  background-position: 10px 12px; /* Position the search icon */
+  background-repeat: no-repeat; /* Do not repeat the icon image */
+  width: 100%; /* Full-width */
+  font-size: 16px; /* Increase font-size */
+  padding: 12px 20px 12px 40px; /* Add some padding */
+  border: 1px solid #ddd; /* Add a grey border */
+  margin-bottom: 12px; /* Add some space below the input */
+}
+
+#myUL {
+  /* Remove default list styling */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myUL li a {
+  border: 1px solid #ddd; /* Add a border to all links */
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6; /* Grey background color */
+  padding: 12px; /* Add some padding */
+  text-decoration: none; /* Remove default text underline */
+  font-size: 18px; /* Increase the font-size */
+  color: black; /* Add a black text color */
+  display: block; /* Make it into a block element to fill the whole list */
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #eee; /* Add a hover effect to all links, except for headers */
+}
+a href{margin : 0; padding-top:0}  <!-- hyberlink style,removes the space between link and upper text-->
+a href{margin : 0; padding-top:0}  <!-- hyberlink style,removes the space between link and upper text-->
+body {
+	background-image: url(background1.jpg);background-size: cover;height: 100vh;
+    padding:0;
+    margin:0;
+}
+body {
+	background-image: url(background1.jpg);background-size: cover;height: 100vh;
+    padding:0;
+    margin:0;
+}
+</style>
+<script>
+function myFunction() {<!-- this is a function to search in the list about the enterd movie name-->
+  // Declare variables
+  var input, filter, ul, li, a, i, txtValue;
+  input = document.getElementById('myInput');
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("myUL");
+  li = ul.getElementsByTagName('li');
+
+  // Loop through all list items, and hide those who don't match the search query
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    txtValue = a.textContent || a.innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+function myFunction1() {
+  var name=document.getElementById('name').value;
+    if (containsNumbers(name)==true){
+    document.getElementById('alert').innerHTML = 'The name can contain a number please re-enter your name ';
+    
+  }
+  else{
+    document.getElementById('alert').innerHTML = 'The name is : ' + name;
+    
+  }
+}
+
+</script>
+    <p id="demo" style="color:red;"></p>
+
+</head>  <!-- This is the end of head tag-->
+
+<body style=" font-style: italic; font-weight: bold;">  <!-- Inline style for the background of the website-->
+<h1 style="color: #FFF; text-align: center; font-size: 50px; font-weight: bold; font-style: italic;"> Movies List</h1> <!-- heading with inline style-->
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for movies..">
+
+<ul id="myUL">
+  <li><a href="hp1.html">Harry Potter and the Sorcerer's Stone</a></li>
+  <li><a href="hp2.html">Harry Potter and the Chamber of Secrets</a></li>
+
+  <li><a href="hp3.html">Harry Potter and the Prizoner of Azkaban</a></li>
+  <li><a href="hp4.html">Harry Potter and the Goblet of Fire</a></li>
+
+  <li><a href="hp5.html">Harry Potter and the Order of the Phoniex</a></li>
+  <li><a href="hp6.html">Harry Potter and the Half-Blood Prince</a></li>
+  <li><a href="hp7.html">Harry Potter and the Deathly Hallows Part 1</a></li>
+  <li><a href="hp8.html">Harry Potter and the Deathly Hallows Part 2</a></li>
+</ul>
+<br />
+
+ <a href="hp1.html"><img src="hp1.jpg" width="177" height="252" alt="Not_Found" /></a>
+ 
+
+<a href="hp2.html"><img src="hp2.jpg" width="177" height="252" alt="Not_Found" /></a>
+
+
+
+<a href="hp3.html"><img src="hp3.jpg" width="177" height="252" alt="Not_Found" /></a>
+
+
+<a href="hp4.html"><img src="hp4.jpg" width="177" height="252" alt="Not_Found" /></a>
+<br />
+<a href="hp5.html"><img src="hp5.jpg" width="177" height="252" alt="Not_Found" /></a>
+
+
+
+<a href="hp6.html"><img src="hp6.jpg" width="177" height="252" alt="Not_Found" /></a>
+
+
+<a href="hp7.html"><img src="hp7.jpg" width="177" height="252" alt="Not_Found" /></a>
+
+
+
+<a href="hp8.html"><img src="hp8.jpg" width="177" height="252" alt="Not_Found" /></a>
+  
+<script>
+const d = new Date(); <!-- this is a object to take the date -->
+document.getElementById("demo").innerHTML = d;<!-- to send the date in html to show it-->
+</script>
+</body>
+</html>

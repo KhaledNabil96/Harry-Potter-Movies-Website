@@ -1,0 +1,80 @@
+ <html>
+ <head> <!-- This is the start of head tag-->
+<p id="demo" style="color:red;"></p>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Movies List</title>  <!-- This is the tap name in the browser-->
+<style>  <!-- This is embedded style for hyperlink-->
+
+a href{margin : 0; padding-top:0}  <!-- hyberlink style,removes the space between link and upper text-->
+body {
+	background-image: url(background1.jpg);background-size: cover;height: 100vh;
+    padding:0;
+    margin:0;
+}
+body {
+	background-image: url(background1.jpg);background-size: cover;height: 100vh;
+    padding:0;
+    margin:0;
+}
+</style>
+    <p id="demo" style="color:red;"></p> <!-- this is a paragraph to show the date-->
+
+</head>  <!-- This is the end of head tag-->
+
+<body style="color: #FFF; font-style: italic; font-weight: bold;">  <!-- Inline style for the background of the website-->
+ <img src="hp1.jpg" width="246" height="339" alt="Not_Found" />  <!-- This is the first image with its properties-->
+<p style="color: #FFFFFF; font-style: italic; text-align: left; font-size: 18px; font-weight: bold;">Harry Potter &amp; The Sorcerer's Stone (2001)</p> <!-- This is the title of first movie-->
+<p style="margin-bottom:0;color: #FFF; font-style: italic; text-align: left; font-size: 14px; font-weight: bold;">Movie Info:</p> 
+<p style="margin : 0; padding-top: 0; color: #FF0; text-align: left; font-size: 14px; font-weight: bold;">Adaptation of the first of J.K. Rowling's popular children's novels about Harry Potter, a boy who learns on his eleventh birthday that he is the orphaned son of two powerful wizards and possesses unique magical powers of his own. He is summoned from his life as an unwanted child to become a student at Hogwarts, an English boarding school for wizards. There, he meets several friends who become his closest allies and help him discover the truth about his parents' mysterious deaths.</p><!-- This is the info of first movie-->
+<p style="margin-bottom:0;color: #FFF; font-style: italic; text-align: left; font-size: 14px; font-weight: bold;">Watch the Official Trailer:</p>
+<a style="color:#FC3" href="https://www.youtube.com/watch?v=VyHV0BRtdxo">Harry Potter and the Sorcerer's Stone (2001) Official Trailer</a> <!-- This is the first hyberlink-->
+<p style="margin-bottom:0;color: #FFF; font-style: italic; text-align: left; font-size: 14px; font-weight: bold;">Rate And Review:</p>
+<form> <!-- This is form for collecting reviews from users-->
+<textarea name="review" rows="7" cols="50" ></textarea><br><br> <!-- This is the review textbox-->
+  <label for="name">Enter Your Name:</label><br>
+  <input type="text" id="name" value=> 	<!-- This is the text field for user name-->
+  
+<select name="List"> <!-- This is the list to rate the movie out of 10-->
+  <option>0</option>
+  <option>1</option>
+  <option>2</option>
+  <option>3</option>
+  <option>4</option>
+  <option>5</option>
+  <option>6</option>
+  <option>7</option>
+  <option>8</option>
+  <option>9</option>
+  <option>10</option>
+</select>
+<br><br>
+<input type="button" value="Submit" onclick="myFunction1()" /> <!-- This is the submit button when the user presses submit the myFunction() will run to check -->
+<input name="Reset" type="reset" value="Reset" /><!-- This is the reset button-->
+      <div id="alert" style="color: red"></div>
+
+</form><!-- This is the end of the form-->
+<hr> <!-- This is the horizontal line-->
+
+<!-- The rest of the code is the same as the above code with all its properties but with different movies-->
+<script>
+function myFunction1() { <!-- this is a function to refuse the input if the user enters any numbers in his name-->
+  var name=document.getElementById('name').value;
+    if (containsNumbers(name)==true){
+    document.getElementById('alert').innerHTML = 'The name can contain a number please re-enter your name ';
+    
+  }
+  else{
+    document.getElementById('alert').innerHTML = 'The name is : ' + name;
+    
+  }
+}
+function containsNumbers(str) { <!-- this is a function checks if the string have numbers or not-->
+  return /\d/.test(str);<!--it returns true or flase-->
+}
+</script>
+<script>
+const d = new Date(); <!--This is an object of the current date -->
+document.getElementById("demo").innerHTML = d;<!--sends the date variable to the html part to show it-->
+</script>
+</body>
+</html>

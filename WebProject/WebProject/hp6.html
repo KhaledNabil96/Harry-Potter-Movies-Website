@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+<head> <!-- This is the start of head tag-->
+<p id="demo" style="color:red;"></p>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Movies List</title>  <!-- This is the tap name in the browser-->
+<style>  <!-- This is embedded style for hyperlink-->
+
+a href{margin : 0; padding-top:0}  <!-- hyberlink style,removes the space between link and upper text-->
+body {
+	background-image: url(background1.jpg);background-size: cover;height: 100vh;
+    padding:0;
+    margin:0;
+}
+body {
+	background-image: url(background1.jpg);background-size: cover;height: 100vh;
+    padding:0;
+    margin:0;
+}
+</style>
+</head>  <!-- This is the end of head tag-->
+
+<body style=" color: #FFF; font-style: italic; font-weight: bold;">  <!-- Inline style for the background of the website-->
+<img src="hp6.jpg" width="237" height="333" alt="Not_Found" />
+<p style="color: #FFF; font-style: italic; text-align: left; font-size: 18px; font-weight: bold;">Harry Potter &amp; The Half-Blood Prince (2009)</p>
+<p style="margin-bottom:0;color: #FFF; font-style: italic; text-align: left; font-size: 14px; font-weight: bold;">Movie 	Info:</p>
+<p style="margin : 0; padding-top: 0; color: #FF0; font-style: italic; text-align: left; font-size: 14px; font-weight: bold;">As Death Eaters wreak havoc in both Muggle and Wizard worlds, Hogwarts is no longer a safe haven for students. Though Harry (Daniel Radcliffe) suspects there are new dangers lurking within the castle walls, Dumbledore is more intent than ever on preparing the young wizard for the final battle with Voldemort. Meanwhile, teenage hormones run rampant through Hogwarts, presenting a different sort of danger. Love may be in the air, but tragedy looms, and Hogwarts may never be the same again.</p>
+<p style="margin-bottom:0;color: #FFF; font-style: italic; text-align: left; font-size: 14px; font-weight: bold;">Watch the Official Trailer:</p>
+<a style="color:#FC3" href="https://www.youtube.com/watch?v=tAiy66Xrsz4">Harry Potter and the Half-Blood Prince (2009) Official Trailer</a>
+<p style="margin-bottom:0;color: #FFF; font-style: italic; text-align: left; font-size: 14px; font-weight: bold;">Rate And Review:</p>
+<<form>
+<textarea name="review" rows="7" cols="50" ></textarea><br><br>
+  <label for="name6">Enter Your Name:</label><br>
+ <input type="text" id="name6" value=>
+ <select name="List">
+  <option>0</option>
+  <option>1</option>
+  <option>2</option>
+  <option>3</option>
+  <option>4</option>
+  <option>5</option>
+  <option>6</option>
+  <option>7</option>
+  <option>8</option>
+  <option>9</option>
+  <option>10</option>
+</select>
+<br><br>
+<input type="button" value="Submit" onclick="myFunction6()" /> 
+<input name="Reset" type="reset" value="Reset" />
+      <div id="alert6" style="color: red"></div>
+
+</form>
+<hr>
+<script>
+function containsNumbers(str) { <!-- this is a function checks if the string have numbers or not-->
+  return /\d/.test(str);
+}
+function myFunction6() {<!-- this is a function to refuse the input if the user enters any numbers in his name-->
+                var name6 = document.getElementById('name6').value;
+                if (containsNumbers(name6)==true) {
+                    document.getElementById('alert6').innerHTML = 'The name can not be a number please re-enter your name ';
+
+                } else {
+                    document.getElementById('alert6').innerHTML = 'The user name is: ' + name6;
+
+                }
+}
+</script>
+</script>
+<script>
+const d = new Date();<!--This is an object of the current date -->
+document.getElementById("demo").innerHTML = d;
+</script>
+</body>
+<html>

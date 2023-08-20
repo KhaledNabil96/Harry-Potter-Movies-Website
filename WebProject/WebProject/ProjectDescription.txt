@@ -1,0 +1,5 @@
+This is a small project for series of movies (Harry Potter) ratings.The idea of this project comes from IMDB.
+The first page is the home page whcih you can search for movies by name and it cointains the images and names for each movie.
+The name of each movies is a hyperlink for another page which is the page of the movie.
+The page of the movies contains(the poster of the movie-the movies name-movies description-hyperlink for movie trailer-2 textboxes to write the review and the name and finally the movie rating).
+
